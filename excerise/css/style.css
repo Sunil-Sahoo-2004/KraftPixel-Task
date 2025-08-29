@@ -1,0 +1,259 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    color: #111;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* navbar */
+.navbar {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    position: relative;
+    background: #fff;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar__logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar_brand {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar__links {
+    display: none;
+    gap: 1.5rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.navbar__link:hover {
+    color: #6b46c1;
+}
+
+.navbar__actions {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__login {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.navbar__signup {
+    text-decoration: none;
+    background: #6b46c1;
+    color: #111;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.navbar__signup:hover {
+    background: #55319a;
+}
+
+.navnar_hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.navnar_hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+}
+
+/* about */
+.about {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.about__container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about__lavel {
+    color: #6b46c1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.about_title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.about_description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* journey */
+.journey {
+    padding: 4rem 1rem;
+    background: #f9fafb;
+}
+
+.journey__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.journey__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 650px;
+}
+
+.journey__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.journey__content {
+    flex: 1;
+    max-width: 600;
+}
+
+.journey__label {
+    color: #6b46c1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.journey__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.journey__description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.journey__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.journey__stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6b46c1;
+    margin-bottom: 0.3rem;
+}
+
+.journey__state-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .navbar__links, .navbar__actions {
+        display: flex;
+    }
+
+    .navnar_hamburger {
+        display: none;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+    }
+
+    .journey__container {
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .journey__content {
+        text-align: left;
+    }
+
+    .journey__title {
+        font-size: 2.5rem;
+    }
+
+    .journey__stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .journey__stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .journey__container {
+        flex-direction: column-reverse;
+    }
+
+    .journey__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .journey__description {
+        display: block;
+    }
+}
