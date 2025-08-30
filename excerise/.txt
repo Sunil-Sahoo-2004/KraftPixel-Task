@@ -1,0 +1,12 @@
+AI Usage Declaration
+
+I used ChatGPT to help me:
+- Understand the assignment instructions more clearly.
+- Get suggestions for proper HTML/CSS structure and naming conventions (BEM style).
+- Review my existing code and identify improvements.
+
+All the final HTML and CSS code was written, structured, and tested by me. 
+I did not use AI to auto-generate the full assignment solution; instead, I used it only for guidance and best practices. 
+The coding, debugging, and deployment work was done manually by me.
+
+This declaration is provided honestly in accordance with the instructions of the assignment.
