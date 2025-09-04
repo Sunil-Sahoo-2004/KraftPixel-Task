@@ -167,7 +167,7 @@ body {
 
 .journey__content {
     flex: 1;
-    max-width: 600;
+    max-width: 600px;
 }
 
 .journey__label {
